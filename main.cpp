@@ -58,9 +58,9 @@ for(int i = from;i <= to;i++) std::cout << (char)i << " 0x" << std::hex << i << 
 namespace limits{
 template <typename Type> int min_value_of_type(const char*name,bool sig){
 if ( sig ){
-std::cout << "max value of " << name << " " << (pow(2, (sizeof(Type)*8) ) / 2 - 1)*-1 <<std::endl;
+std::cout << "min value of " << name << " " << (pow(2, (sizeof(Type)*8) ) / 2 - 1)*-1 <<std::endl;
 }else{
-return 0;
+std::cout << "min value of " << name << " 0 " <<std::endl;
 }
 
 }
